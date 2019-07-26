@@ -53,7 +53,7 @@
     return MAX(0, MIN(z, 100));;
 }
 
-//收颧骨
+//瘦颧骨
 - (NSInteger)cheekBonesFacelong:(float)x
                       facewidth:(float)y
                         eyedist:(float)u
@@ -96,19 +96,18 @@
         }
     }
     //eyedist
-    if (y>= 0 && y < 0.2) {
+    if (x>= 0 && x < 0.205) {
         if (u >= 0 && u < 0.155) {
             z = z - 5.0;
         } else if (u >= 0.155) {
             z = z;
         }
-        
-    } else if (y > 0.2) {
+    } else if (x >= 0.205) {
         z = z;
     }
     //chin
-    if (x >0.005 && x <= 0.355) {
-        if (v >= 0 && v <0.105) {
+    if (x >=0.005 && x < 0.355) {
+        if (v >= 0 && v <0.1) {
             z = z + 8.0;
         } else {
             z = z;
@@ -127,7 +126,7 @@
                          chin:(float)v {
     float z = 0.0;
     //facewidth
-    if (y < 0.5) {
+    if (y >= 0 && y < 0.5) {
         z = z;
     } else if (y >= 0.5){
         z = 20*(2*y - 1);
@@ -371,7 +370,7 @@
         z = z;
     } else if (y > 0.505 && y <= 0.805) {
         z = z - 10;
-    } else if (y > 0.805) {
+    } else if (y >= 0.805) {
         z = z - 18.0;
     }
     
@@ -472,5 +471,6 @@
 - (NSInteger)eyebag {
     return 50;
 }
+
 
 @end
