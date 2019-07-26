@@ -32,9 +32,13 @@ class V2ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
+//        self.navigationController?.navigationBar.backgroundColor = UIColor.clear
+//        self.navigationController?.navigationBar.isHidden = false
+        
+        
         view.addSubview(button)
         button.backgroundColor = .gray
-        button.frame = CGRect(x: 20, y: 650, width: 140, height: 40)
+        button.frame = CGRect(x: 20, y: 600, width: 140, height: 40)
         button.setTitleColor(.green, for: .normal)
         button.addTarget(self, action: #selector(onGender), for: .touchUpInside)
         updateTitle()
@@ -104,7 +108,7 @@ class V2ViewController: UIViewController {
         view.addSubview(label1)
         label1.textColor = .black
         label1.numberOfLines = 2
-        label1.frame = CGRect(x: 20, y: 40, width: view.frame.width, height: 50)
+        label1.frame = CGRect(x: 20, y: 650, width: view.frame.width, height: 50)
         
         view.addSubview(label2)
         label2.textColor = .black
