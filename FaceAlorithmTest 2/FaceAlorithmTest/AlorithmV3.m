@@ -62,7 +62,7 @@
     float z = 0.0;
     //facewidth
     if (y < 0.5) {
-        z = 43 - 86*y;
+        z = 30 - 60*y;
     } else if (y >= 0.5) {
         z = 0.0;
     }
