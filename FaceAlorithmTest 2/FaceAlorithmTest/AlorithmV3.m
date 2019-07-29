@@ -9,6 +9,7 @@
 #import "AlorithmV3.h"
 
 @implementation AlorithmV3
+
 //窄脸：
 - (NSInteger)cutFaceFacelong:(float)x
                    facewidth:(float)y
@@ -359,14 +360,14 @@
     //eye
     if (x >= 0 && x < 0.5) {
         z = 60 - 30*x;
-    } else if (x <= 0.5) {
+    } else if (x >= 0.5) {
         z = 45 - 20*(2*x - 1);
     }
     
     //eyeshape
-    if (y >= 0 && y <= 0.505) {
+    if (y >= 0 && y < 0.505) {
         z = z;
-    } else if (y > 0.505 && y <= 0.805) {
+    } else if (y >= 0.505 && y <= 0.805) {
         z = z - 10;
     } else if (y >= 0.805) {
         z = z - 18.0;
@@ -469,6 +470,5 @@
 - (NSInteger)eyebag {
     return 50;
 }
-
 
 @end
