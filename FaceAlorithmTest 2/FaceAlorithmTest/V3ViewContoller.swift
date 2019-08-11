@@ -68,7 +68,7 @@ extension V3Viewcontroller: VSliderDelegate {
         let al = AlorithmV3()
         let cutFaceLevel = al.cutFaceFacelong(facelongSlider.value(), facewidth: facewidthSlider.value(), eyedist: eyedistSlider.value(), chin: chinSlider.value())
         let enlargeLevel = al.bigEye(eyeSlider.value(), eyeshape: eyeshapeSlider.value(), facelong: facelongSlider.value(), eyedist: eyedistSlider.value(), facewidth: facewidthSlider.value())
-        let thinNoseLevel = al.noseFaceratio(faceratioSlider.value(), eyebrowdist: eyebrowdistSlider.value(), facelong: facelongSlider.value(), chin: chinSlider.value())
+        let thinNoseLevel = al.nosewidthNosewidth(nosewidthSlider.value(), faceratio: faceratioSlider.value())
         let foreheadLevel = al.foreheadForehead(foreheadSlider.value())
         let cheekBonesLevel = al.cheekBonesFacelong(facelongSlider.value(), facewidth: facewidthSlider.value(), eyedist: eyedistSlider.value(), chin: chinSlider.value())
         let lowerJawLevel = al.lowerJawFacelong(facelongSlider.value(), facewidth: facewidthSlider.value(), eyedist: eyeSlider.value(), chin: chinSlider.value())
