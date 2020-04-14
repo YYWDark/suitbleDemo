@@ -50,7 +50,7 @@ class VSlider: UIView {
         delegate?.onSliderValueChanged(slider)
     }
     
-    func value() -> Float {
-        return slider.value
+    func value() -> CGFloat {
+        return CGFloat(slider.value)
     }
 }

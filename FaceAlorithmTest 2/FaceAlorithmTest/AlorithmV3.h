@@ -12,67 +12,67 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AlorithmV3 : NSObject
 //窄脸：
-- (NSInteger)cutFaceFacelong:(float)x
-                   facewidth:(float)y
-                     eyedist:(float)u
-                        chin:(float)v;
+- (NSInteger)cutFaceFacelong:(CGFloat)x
+                   facewidth:(CGFloat)y
+                     eyedist:(CGFloat)u
+                        chin:(CGFloat)v;
 
 //收颧骨
-- (NSInteger)cheekBonesFacelong:(float)x
-                      facewidth:(float)y
-                        eyedist:(float)u
-                           chin:(float)v;
+- (NSInteger)cheekBonesFacelong:(CGFloat)x
+                      facewidth:(CGFloat)y
+                        eyedist:(CGFloat)u
+                           chin:(CGFloat)v;
 
 //收下颌骨
-- (NSInteger)lowerJawFacelong:(float)x
-                    facewidth:(float)y
-                      eyedist:(float)u
-                         chin:(float)v;
+- (NSInteger)lowerJawFacelong:(CGFloat)x
+                    facewidth:(CGFloat)y
+                      eyedist:(CGFloat)u
+                         chin:(CGFloat)v;
 
 //鼻长
-- (NSInteger)noseFaceratio:(float)x
-               eyebrowdist:(float)y
-                  facelong:(float)u
-                      chin:(float)v;
+- (NSInteger)noseFaceratio:(CGFloat)x
+               eyebrowdist:(CGFloat)y
+                  facelong:(CGFloat)u
+                      chin:(CGFloat)v;
 
 //发际线
-- (NSInteger)foreheadForehead:(float)x;
+- (NSInteger)foreheadForehead:(CGFloat)x;
 
 //眼睛上下移
-- (NSInteger)eyesmoveEyebrowdist:(float)x
-                       faceratio:(float)y
-                        facelong:(float)u;
+- (NSInteger)eyesmoveEyebrowdist:(CGFloat)x
+                       faceratio:(CGFloat)y
+                        facelong:(CGFloat)u;
 
 //下巴
-- (NSInteger)chinChin:(float)x
-            faceratio:(float)y
-           mouthwidth:(float)u
-             facelong:(float)v;
+- (NSInteger)chinChin:(CGFloat)x
+            faceratio:(CGFloat)y
+           mouthwidth:(CGFloat)u
+             facelong:(CGFloat)v;
 
 //缩人中
-- (NSInteger)philtrumChin:(float)x
-                faceratio:(float)y
-               mouthwidth:(float)u
-                 facelong:(float)v;
+- (NSInteger)philtrumChin:(CGFloat)x
+                faceratio:(CGFloat)y
+               mouthwidth:(CGFloat)u
+                 facelong:(CGFloat)v;
 
 //大眼
-- (NSInteger)bigEye:(float)x
-           eyeshape:(float)y
-           facelong:(float)u
-            eyedist:(float)v
-          facewidth:(float)w;
+- (NSInteger)bigEye:(CGFloat)x
+           eyeshape:(CGFloat)y
+           facelong:(CGFloat)u
+            eyedist:(CGFloat)v
+          facewidth:(CGFloat)w;
 
 //眼距
-- (NSInteger)eyeDistacneEyedist:(float)x
-                      facewidth:(float)y;
+- (NSInteger)eyeDistacneEyedist:(CGFloat)x
+                      facewidth:(CGFloat)y;
 
 
 //瘦鼻
-- (NSInteger)nosewidthNosewidth:(float)x
-                      faceratio:(float)y;
+- (NSInteger)nosewidthNosewidth:(CGFloat)x
+                      faceratio:(CGFloat)y;
 
 //嘴型
-- (NSInteger)mouthWidthMouth:(float)x;
+- (NSInteger)mouthWidthMouth:(CGFloat)x;
 
 
 @end
